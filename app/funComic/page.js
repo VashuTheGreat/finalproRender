@@ -31,6 +31,8 @@ const Page = () => {
     }, []);
   return (<>
   <Nav/>
+
+  {/* Commic */}
     
    <div className=" bg-black m-0 p-0">
       <div id="fb-root"></div>

@@ -8,11 +8,11 @@ const Navbar2 = () => {
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-2">
 <Image src="/logo.svg" alt="logo" width={200} height={60} />
-        {/* Optional text beside logo */}
-        {/* <span className="text-xl font-bold">Netflix</span> */}
       </Link>
 
-      {/* Right side links */}
+
+      {/* signIN */}
+
       <div className="space-x-6">
         <Link href="/login" className="text-lg font-medium hover:underline">
           Sign In

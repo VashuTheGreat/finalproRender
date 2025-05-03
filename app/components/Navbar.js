@@ -5,17 +5,18 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [language, setLanguage] = useState("English");
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [language, setLanguage] = useState("English"); // initial deefault language selected is English
+  const [showDropdown, setShowDropdown] = useState(false); // toggle false initially
 
   const handleLanguageChange = (lang) => {
-    console.log("Language selected:", lang); // Log the language when clicked
+    console.log("Language selected:", lang); // console.Log the language when clicked
     setLanguage(lang);
     setShowDropdown(false); // Close the dropdown after selection
   };
 
   return (
     <nav className="max-w-[80vw] mx-auto flex justify-between items-center h-[62px] relative z-10">
+      {/* //logo */}
       <Link href={"/"} ><Image src="/logo.svg" alt="logo" width={200} height={60} /></Link>
 
       <div className="flex gap-4 items-center relative">
@@ -31,7 +32,7 @@ const Navbar = () => {
           {showDropdown && (
             <div
               className="absolute right-0 mt-1 w-[100px] bg-white bg-opacity-20 border border-white rounded shadow-md backdrop-blur-md z-50"
-              onClick={(e) => e.stopPropagation()} // prevent bubble
+              // onClick={(e) => e.stopPropagation()} // prevent bubble
             >
               <ul>
                 {/* English option */}

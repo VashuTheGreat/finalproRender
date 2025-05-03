@@ -40,10 +40,9 @@ const Page = () => {
         className="pop-slide absolute top-0 left-0 w-full h-full object-cover z-0 brightness-50"
       />
 
-      {/* Overlay content */}
+{/* upper ka Content */}
       <div className="pop-slide relative z-10 px-4 py-10 flex flex-col items-center space-y-12 backdrop-blur-sm">
 
-        {/* Heading */}
         <h1 className="pop-slide text-4xl md:text-5xl font-bold text-center font-serif tracking-wide drop-shadow-lg flex justify-center items-center gap-2 flex-wrap">
   📖 The
   <span>
@@ -71,10 +70,9 @@ const Page = () => {
           Experience the sacred story of Lord Ram. Turn the pages and dive into one of the greatest epics of all time.
         </p>
 
-        {/* Divider */}
         <div className="pop-slide w-36 h-0.5 bg-gray-400 rounded-full" />
 
-        {/* Short Intro Flipbook */}
+        {/* Short Intoduction Flipbook*/}
         <h2 className="pop-slide text-2xl md:text-3xl font-semibold font-serif mb-2">
           📘 Short Introduction
         </h2>

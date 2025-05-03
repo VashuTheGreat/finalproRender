@@ -1,4 +1,3 @@
-// components/Footer.js
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
@@ -17,7 +16,8 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Navigation Links */}
+
+{/* Navigation Links */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar */}
+      {/* Bottom Copyright */}
       <div className="mt-10 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} VashuTheGreat. All rights reserved.
       </div>
