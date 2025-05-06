@@ -67,7 +67,7 @@ const Navbar = () => {
               onClick={() => setShowUserDropdown(!showUserDropdown)}
               className="px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700 font-semibold"
             >
-              {session.user.name?.split(' ')[0] || 'User'}  //sign in ki jagah name render karna
+              {session.user.name?.split(' ')[0] || 'User'} 
             </button>
 
             {showUserDropdown && (

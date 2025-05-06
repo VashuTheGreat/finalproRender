@@ -12,7 +12,7 @@ const Navbar2 = () => {
   const router = useRouter();
 
   const handleSignInClick = () => {
-    router.push('/login'); // Redirecting to login page when sign in is clicked
+    router.push('/login'); 
   };
 
   return (
