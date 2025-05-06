@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
@@ -6,7 +8,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo and Description */}
         <div>
           <h1 className="text-2xl font-bold mb-4">
             Vashu<span className="text-red-500">TheGreat</span>
@@ -17,7 +18,6 @@ const Footer = () => {
         </div>
 
 
-{/* Navigation Links */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -28,7 +28,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Skills or Tech */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Technologies</h2>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -39,7 +38,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Media */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Connect</h2>
           <div className="flex space-x-4 text-gray-400 text-xl">
@@ -59,7 +57,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
       <div className="mt-10 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} VashuTheGreat. All rights reserved.
       </div>

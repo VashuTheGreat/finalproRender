@@ -26,8 +26,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white pop-slide ">
-      {/* HERO SECTION */}
+    <div className=" text-white pop-slide ">
       <div className="relative h-[80vh]">
         {/* Background Video */}
         <video
@@ -38,13 +37,11 @@ const Page = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
         
-        {/* Dark overlay */}
         <div className='absolute inset-0 bg-black opacity-70'></div>
 
-        {/* Navbar */}
         <Navbar />
 
-        {/* Content on top of video */}
+        {/* video ki upper ka content*/}
         <div className="flex flex-col items-center justify-center text-center gap-6 px-8 h-[calc(100%-62px)] z-10 relative font-['Martel_Sans']">
           <span className="font-black text-4xl md:text-5xl">Unlimited Stories, Anime</span>
           <span className="text-xl font-normal">shows and more</span>
@@ -70,7 +67,7 @@ const Page = () => {
 >
 
         {/* SECTION 1 */}
-      <section className="pop-slide flex flex-col md:flex-row items-center justify-center max-w-[70vw] mx-auto py-10 gap-8 bg-cover bg-center"
+        <Link href={"/ramayan"}> <section className="pop-slide flex flex-col md:flex-row items-center justify-center max-w-[70vw] mx-auto py-10 gap-8 bg-cover bg-center"
   
   >
           <div className="text-center md:text-left space-y-4">
@@ -78,13 +75,13 @@ const Page = () => {
             <p className="text-lg">Read on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
           </div>
           <div className="relative flex justify-center items-center">
-            <Link href={"/ramayan"}><Image
+           <Image
   src="/bk.png"
   alt="TV"
   width={500}
   height={300}
   className="transition-transform duration-300 hover:scale-105"
-/></Link>
+/>
   <Image
     src="/click.gif"
     alt="TV"
@@ -94,20 +91,20 @@ const Page = () => {
   />
 </div>
 
-        </section>
+        </section></Link>
   
         <div className="h-[7px] bg-neutral-800"></div>
   
         {/* SECTION 2 */}
-        <section className="pop-slide flex flex-col-reverse md:flex-row items-center justify-center max-w-[70vw] mx-auto py-10 gap-8">
+        <Link href={'/funComic'}>  <section className="pop-slide flex flex-col-reverse md:flex-row items-center justify-center max-w-[70vw] mx-auto py-10 gap-8">
           <div className="relative flex justify-center items-center">
-        <Link href={'/funComic'}>  <Image
+        <Image
   src="/bk.png"
   alt="TV"
   width={500}
   height={300}
   className="transition-transform duration-300 hover:scale-105"
-/></Link>
+/>
   <Image
     src="/click.gif"
     alt="TV"
@@ -121,13 +118,12 @@ const Page = () => {
             <h1 className="text-4xl font-bold">Read fun Comic</h1>
             <p className="text-lg">Save your favorites easily and always have something to Read.</p>
           </div>
-        </section>
+        </section></Link>
   
         <div className="h-[7px] bg-neutral-800"></div>
   
         {/* SECTION 3 */}
         <section className="pop-slide flex flex-col md:flex-row items-center justify-between max-w-[90vw] mx-auto py-10 gap-8">
-  {/* Left Text Section */}
   <div className="flex-1 text-center md:text-left space-y-4">
     <h1 className="text-4xl font-bold">Watch Anywhere</h1>
     <p className="text-lg">
@@ -135,7 +131,7 @@ const Page = () => {
     </p>
   </div>
 
-  {/* Right Image + Video Section */}
+  {/* TV Image + Video Section */}
   <div className="flex-1 relative flex justify-center items-center w-full max-w-[500px]">
     {/* Responsive TV image */}
     <Image
@@ -146,7 +142,7 @@ const Page = () => {
       className="w-full h-auto"
     />
 
-    {/* Responsive iframe inside the TV */}
+    {/*making iframe and tv responsive here*/}
     <div
       className="absolute"
       style={{
@@ -215,8 +211,9 @@ const Page = () => {
         
         )}
         </div>
+
+        {/* answer of FaQ */}
   
-        {/* Answer section shown when added = true */}
         {added && (
           <div className="max-w-[100vh] mx-auto bg-neutral-800 p-6 mt-2 text-white transition-all duration-300">
             Vstory is a streaming platform that brings you unlimited access to a wide range of original stories, anime, shows, and entertainment. Watch anywhere, anytime on any internet-connected device. Vstory is designed to immerse you in the world of storytelling like never before.
@@ -227,7 +224,6 @@ const Page = () => {
       </div>
       <div className="h-[7px] bg-neutral-800"></div>
 
-      {/* FOOTER */}
       <Footer />
     </div>
   );

@@ -3,7 +3,7 @@
 "use client"
 import React from 'react';
 import Nav from '../components/nav';
-import Image from 'next/image'; // Only if you're using Next.js
+import Image from 'next/image'; 
 import Footer from '../components/Footer';
 import '../globals.css';
 import { useEffect } from 'react';
@@ -28,7 +28,7 @@ const Page = () => {
     }, []);
   return (<>
   <Nav/>
-    <div className="pop-slide relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="pop-slide relative min-h-screen text-white overflow-hidden">
       
       {/* Background Video */}
       <video
